@@ -1,0 +1,5 @@
+/home/elementary/IdeaProjects/Kafka-log-monitoring/src/main/java/com/kafka/App.java
+/home/elementary/IdeaProjects/Kafka-log-monitoring/src/main/java/com/kafka/SimpleProducer.java
+/home/elementary/IdeaProjects/Kafka-log-monitoring/src/main/java/com/kafka/IKafkaConstants.java
+/home/elementary/IdeaProjects/Kafka-log-monitoring/src/main/java/com/kafka/LogSerializer.java
+/home/elementary/IdeaProjects/Kafka-log-monitoring/src/main/java/com/kafka/LogListener.java
