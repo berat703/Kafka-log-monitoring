@@ -2,7 +2,6 @@ package com.kafka;
 
 import org.apache.commons.io.input.Tailer;
 import org.apache.commons.io.input.TailerListener;
-import org.apache.commons.io.input.TailerListenerAdapter;
 
 import java.io.File;
 
@@ -10,21 +9,11 @@ public class LogListener {
     private static final String logDirectoryName = "logs";
     private static final String logFileName = "";
     private static File file;
-    private static TailerListener listener = new ShowLinesListener();
+    private static TailerListener listener = new LogHandler();
     private static Thread tailerThread;
     private static Tailer tailer;
 
-    /**
-     * TailerListener implementation.
-     */
-    static public class ShowLinesListener extends TailerListenerAdapter {
-        @Override
-        public void handle(String line) {
-            System.out.println(line);
-        }
-    }
-
-    public static void main(String args[]) {
+    public void run() {
         checkFileHasChanged();
         initTailer();
     }
@@ -46,6 +35,7 @@ public class LogListener {
                 while (true) {
                     if(file != null){
                         if(!file.exists()){
+                            System.out.println("not exists");
                             tailer.stop();
                             initTailer();
                         }
