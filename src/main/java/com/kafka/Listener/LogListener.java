@@ -1,24 +1,31 @@
-package com.kafka;
+package com.kafka.Listener;
 
+import com.kafka.Producer.SimpleProducer;
 import org.apache.commons.io.input.Tailer;
 import org.apache.commons.io.input.TailerListener;
 
 import java.io.File;
 
 public class LogListener {
-    private static final String logDirectoryName = "logs";
-    private static final String logFileName = "";
+    private final String logDirectoryName = "logs";
+    private final String logFileName = "";
     private static File file;
-    private static TailerListener listener = new LogHandler();
+    private SimpleProducer producer;
+    private TailerListener listener;
     private static Thread tailerThread;
     private static Tailer tailer;
+
+    public LogListener(SimpleProducer producer) {
+        this.producer = producer;
+        this.listener = new LogHandler(this.producer);
+    }
 
     public void run() {
         checkFileHasChanged();
         initTailer();
     }
 
-    private static File getLogFile(){
+    private File getLogFile() {
         File dir = new File(System.getProperty("user.dir")+"/"+logDirectoryName);
         File[] files = dir.listFiles((dir1, name) -> name.startsWith("log_") && name.endsWith(".log"));
         System.out.println("Log file added..:"+files[0].getName());
@@ -26,7 +33,7 @@ public class LogListener {
     }
 
 
-    private static void checkFileHasChanged(){
+    private void checkFileHasChanged() {
         // run in a second
         final long timeInterval = 2000;
         Runnable runnable = new Runnable() {
@@ -54,9 +61,9 @@ public class LogListener {
         thread.start();
     }
 
-    private static void initTailer(){
+    private void initTailer() {
         file = getLogFile();
-        tailer = new Tailer(file, listener, 1000);
+        tailer = new Tailer(file, this.listener, 1000);
         tailerThread = new Thread(tailer);
         tailerThread.start();
     }

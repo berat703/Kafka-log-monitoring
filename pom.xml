@@ -21,7 +21,7 @@
     </build>
     <packaging>jar</packaging>
 
-    <name>kakfa-first</name>
+    <name>kafka-first</name>
     <url>http://maven.apache.org</url>
 
     <properties>

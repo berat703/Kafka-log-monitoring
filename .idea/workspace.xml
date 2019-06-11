@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f759e569-0679-4c37-8e52-e069deedd39a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kafka/ConsumerThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kafka/JsonBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kafka/LogHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kafka/Models/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger.sh" beforeDir="false" afterPath="$PROJECT_DIR$/logger.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kafka/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kafka/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kafka/LogListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kafka/LogListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kafka/LogSerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kafka/ConsumerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kafka/IKafkaConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kafka/Interfaces/IKafkaConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kafka/JsonBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kafka/JsonBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kafka/LogHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kafka/Listener/LogHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kafka/LogListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kafka/Listener/LogListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kafka/SimpleProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kafka/Producer/SimpleProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kafka/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kafka/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kafka/LogListener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kafka/LogListener$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kafka/LogListener$ShowLinesListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kafka/LogListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kafka/LogListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kafka/LogSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kafka/IKafkaConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kafka/LogListener$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kafka/LogListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kafka/SimpleProducer.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,19 +37,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/IKafkaConstants.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="42" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="42" />
+            <state relative-caret-position="150">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/LogListener.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/Listener/LogListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-165">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="120">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/Listener/LogHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/JsonBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/Producer/SimpleProducer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,42 +94,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/LogHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/Models/Log.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/SimpleProducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-228">
-              <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/ConsumerThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="27" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#805#806#0" expanded="true" />
-                <element signature="e#846#847#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -126,21 +133,22 @@
         <option value="$PROJECT_DIR$/src/main/java/ProducerCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kafka/ProducerCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kafka/LogFileReader.java" />
-        <option value="$PROJECT_DIR$/logger.sh" />
         <option value="$PROJECT_DIR$/src/main/java/com/kafka/Producer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kafka/SimpleProducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kafka/TailerFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kafka/LogListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kafka/LogSerializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kafka/Models/Log.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/kafka/ModelBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kafka/JsonBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kafka/Connector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kafka/LogHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kafka/IKafkaConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kafka/ConsumerThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kafka/LogListener.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kafka/Logger.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kafka/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kafka/LogHandler.java" />
+        <option value="$PROJECT_DIR$/logger.sh" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kafka/JsonBuilder.java" />
       </list>
     </option>
   </component>
@@ -177,11 +185,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="40" />
-    <option name="width" value="1346" />
-    <option name="height" value="725" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="683" />
+    <option name="y" value="30" />
+    <option name="width" value="683" />
+    <option name="height" value="738" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -189,54 +197,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="kafka-log-monitoring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-producer" type="b2602c69:ProjectViewProjectNode" />
               <item name="Kafka-log-monitoring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="kafka-log-monitoring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-producer" type="b2602c69:ProjectViewProjectNode" />
               <item name="Kafka-log-monitoring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kafka-log-monitoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kafka-log-monitoring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kafka-log-monitoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kafka-log-monitoring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kafka-log-monitoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kafka-log-monitoring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kafka-log-monitoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kafka-log-monitoring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -274,7 +252,7 @@
       <module name="com.teb.kafka-first" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kafka.*" />
+          <option name="PATTERN" value="com.kafka.Interfaces.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -283,11 +261,11 @@
       </method>
     </configuration>
     <configuration name="LogListener" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kafka.LogListener" />
+      <option name="MAIN_CLASS_NAME" value="com.kafka.Listener.LogListener" />
       <module name="com.teb.kafka-first" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kafka.*" />
+          <option name="PATTERN" value="com.kafka.Interfaces.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -296,11 +274,11 @@
       </method>
     </configuration>
     <configuration name="SimpleProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kafka.SimpleProducer" />
+      <option name="MAIN_CLASS_NAME" value="com.kafka.Producer.SimpleProducer" />
       <module name="com.teb.kafka-first" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kafka.*" />
+          <option name="PATTERN" value="com.kafka.Interfaces.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -330,7 +308,9 @@
       <workItem from="1560074316115" duration="111000" />
       <workItem from="1560074519718" duration="12156000" />
       <workItem from="1560109361244" duration="8023000" />
-      <workItem from="1560174953418" duration="12937000" />
+      <workItem from="1560174953418" duration="13378000" />
+      <workItem from="1560244587396" duration="10363000" />
+      <workItem from="1560272974875" duration="5967000" />
     </task>
     <task id="LOCAL-00001" summary="Added mvp producer,&#10;Added Loglistener (Almost done) &#10;Added logger script">
       <created>1560118223903</created>
@@ -339,11 +319,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560118223903</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added mvp consumer,&#10;Added log model class&#10;some small changes on classes">
+      <created>1560206074920</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1560206074921</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43400000" />
+    <option name="totallyTimeSpent" value="60171000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -355,10 +342,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="40" width="1346" height="725" extended-state="0" />
+    <frame x="683" y="30" width="683" height="738" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26615384" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5588697" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -367,15 +354,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4411277" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49923077" visible="true" weight="0.39966834" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4318182" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49923077" weight="0.39966834" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3283582" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Docker" order="7" weight="0.3297414" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3297414" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.049751244" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6002155" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50076926" side_tool="true" weight="0.39966834" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3283582" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -394,8 +381,36 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Added mvp producer,&#10;Added Loglistener (Almost done) &#10;Added logger script" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added mvp producer,&#10;Added Loglistener (Almost done) &#10;Added logger script" />
+    <MESSAGE value="Added mvp consumer,&#10;Added log model class&#10;some small changes on classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added mvp consumer,&#10;Added log model class&#10;some small changes on classes" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/kafka/Listener/LogListener.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/kafka/Listener/LogListener.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/kafka/App.java</url>
+          <line>10</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/kafka_log_monitoring$LogListener.ic" NAME="LogListener Coverage Results" MODIFIED="1560111846183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -420,13 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logger.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.6/commons-io-2.6-sources.jar!/org/apache/commons/io/input/TailerListenerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -434,13 +442,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/TailerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/TailerFactory.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/2.2.1/kafka-clients-2.2.1-sources.jar!/org/apache/kafka/clients/producer/KafkaProducer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -472,49 +474,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/Models/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-          <folding>
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/jdk-12.0.1/lib/src.zip!/java.base/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="795" column="18" selection-start-line="795" selection-start-column="18" selection-end-line="795" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/IKafkaConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -525,56 +488,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/ConsumerThread.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="61" column="21" lean-forward="true" selection-start-line="57" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/2.2.1/kafka-clients-2.2.1-sources.jar!/org/apache/kafka/clients/consumer/KafkaConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="2150" column="27" selection-start-line="2150" selection-start-column="20" selection-end-line="2150" selection-end-column="27" />
+        <state relative-caret-position="112">
+          <caret line="1134" selection-start-line="1134" selection-end-line="1134" />
           <folding>
+            <element signature="e#68805#68806#0" expanded="true" />
             <element signature="e#71676#71677#0" expanded="true" />
             <element signature="e#71730#71731#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/ConsumerThread.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/Logger.java" />
+    <entry file="file://$PROJECT_DIR$/logger.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-            <element signature="e#846#847#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/LogListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="525">
+          <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        <state relative-caret-position="150">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/SimpleProducer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/Interfaces/IKafkaConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/JsonBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
+        <state relative-caret-position="420">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/Producer/SimpleProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/Listener/LogListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -582,10 +560,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/LogHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/Listener/LogHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kafka/Models/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -645,7 +633,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

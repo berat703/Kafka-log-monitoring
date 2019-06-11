@@ -33,6 +33,6 @@ do
 	CHOSEN_LOCATION=${LOCATION[RANDOM%5]}
 	echo $(date "+%Y-%m-%d %H:%M:%S:%3N") ${LOGGING_LEVELS[RANDOM%5]}  $CHOSEN_LOCATION "Hello-from-"$CHOSEN_LOCATION >> $DIRECTORY_NAME/$FILENAME
 	checkLogFilesize
-	#sleep .5
+	sleep .5
 done
 

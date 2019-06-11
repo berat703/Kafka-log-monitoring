@@ -1,4 +1,4 @@
-package com.kafka;
+package com.kafka.Interfaces;
 
 public interface IKafkaConstants {
     String KAFKA_BROKERS = "localhost:9092";

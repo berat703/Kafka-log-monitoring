@@ -12,10 +12,10 @@ public class JsonBuilder {
 
         String[] splitedMessage = message.split("\\s+");
         return new Log(
-                splitedMessage[0] + "/" + splitedMessage[1],
+                splitedMessage[0] + " " + splitedMessage[1],
+                splitedMessage[3],
                 splitedMessage[2],
-                splitedMessage[1],
-                splitedMessage[3]
+                splitedMessage[4]
         );
     }
 

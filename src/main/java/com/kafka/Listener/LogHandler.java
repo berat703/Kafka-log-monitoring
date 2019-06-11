@@ -1,12 +1,19 @@
-package com.kafka;
+package com.kafka.Listener;
 
+import com.kafka.JsonBuilder;
+import com.kafka.Producer.SimpleProducer;
 import org.apache.commons.io.input.TailerListenerAdapter;
 
 public class LogHandler extends TailerListenerAdapter {
-    private static SimpleProducer producer = new SimpleProducer();
+    private SimpleProducer producer;
+
+    LogHandler(SimpleProducer producer) {
+        this.producer = producer;
+    }
 
     @Override
     public void handle(String line) {
+        System.out.println(line);
         JsonBuilder jsonBuilder = new JsonBuilder();
         producer.run(jsonBuilder.getModelAsJson(line));
     }
