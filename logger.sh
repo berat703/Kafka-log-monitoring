@@ -1,7 +1,7 @@
 #!/bin/sh
 
 LOGGING_LEVELS=("INFO" "FATAL" "WARN" "ERROR" "DEBUG")
-LOCATION=("Istanbul" "Tokyo" "Moskow" "Beijing" "London")
+LOCATION=("Istanbul" "Tokyo" "Moscow" "Beijing" "London")
 
 DIRECTORY_NAME="logs"
 FILENAME="log_"$(date "+%Y%m%d%H%M%S")".log"

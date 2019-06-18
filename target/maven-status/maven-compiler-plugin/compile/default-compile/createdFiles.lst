@@ -1,7 +1,8 @@
-com/kafka/LogListener.class
-com/kafka/LogListener$ShowLinesListener.class
-com/kafka/IKafkaConstants.class
-com/kafka/LogSerializer.class
+com/kafka/Producer/SimpleProducer.class
+com/kafka/Listener/LogListener.class
+com/kafka/JsonBuilder.class
+com/kafka/Listener/LogHandler.class
+com/kafka/Listener/LogListener$1.class
+com/kafka/Interfaces/IKafkaConstants.class
 com/kafka/App.class
-com/kafka/SimpleProducer.class
-com/kafka/LogListener$1.class
+com/kafka/Models/Log.class

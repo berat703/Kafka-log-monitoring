@@ -1,0 +1,94 @@
+#version: "3"
+#
+#services:
+#  zookeeper:
+#    image: confluent/zookeeper
+#    ports:
+#      - "2181:2181"
+#    environment:
+#      zk_id: "1"
+#    networks:
+#      - back-tier
+#
+#  kafka:
+#    image: confluent/kafka
+#    depends_on:
+#      - zookeeper
+#    ports:
+#      - "9092:9092"
+#    environment:
+#      KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
+#    networks:
+#      - back-tier
+#  mongo:
+#    image: mongo
+#    container_name: "mongo"
+#    ports:
+#      - "27017:27017"
+#
+#  producer:
+#    image: berat703/kafka-producer:0.0.3
+#    container_name: "producer"
+#    environment:
+#      - KAFKA_BROKER=kafka:9092
+#    links:
+#      - kafka:kafka
+#  consumer:
+#    image: berat703/kafka-consumer:0.0.2
+#    container_name: "consumer"
+#    ports:
+#      - "8080:8080"
+#    environment:
+#      - KAFKA_BROKER=kafka:9092
+#      - MONGODB_HOST=mongo
+#      - MONGODB_PORT=27017
+#    links:
+#      - kafka:kafka
+#networks:
+#  back-tier:
+#
+version: '2'
+services:
+  zookeeper:
+    image: wurstmeister/zookeeper
+    container_name: "zk"
+    ports:
+      - "2181:2181"
+  kafka:
+    image: wurstmeister/kafka
+    container_name: "kafka"
+    hostname: kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: kafka
+      KAFKA_ZOOKEEPER_CONNECT: zk:2181
+      KAFKA_CREATE_TOPICS: "log-monitoring"
+    links:
+      - zookeeper:zk
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+  mongo:
+    image: mongo
+    container_name: "mongo"
+    ports:
+      - "27017:27017"
+
+  producer:
+    image: berat703/kafka-producer:0.0.3
+    container_name: "producer"
+    environment:
+      - KAFKA_BROKER=kafka:9092
+    links:
+      - kafka:kafka
+  consumer:
+    image: berat703/kafka-consumer:0.0.2
+    container_name: "consumer"
+    ports:
+      - "8080:8080"
+    environment:
+      - KAFKA_BROKER=kafka:9092
+      - MONGODB_HOST=mongo
+      - MONGODB_PORT=27017
+    links:
+      - kafka:kafka

@@ -13,7 +13,6 @@ public class LogHandler extends TailerListenerAdapter {
 
     @Override
     public void handle(String line) {
-        System.out.println(line);
         JsonBuilder jsonBuilder = new JsonBuilder();
         producer.run(jsonBuilder.getModelAsJson(line));
     }
